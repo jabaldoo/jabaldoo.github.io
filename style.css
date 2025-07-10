@@ -134,6 +134,23 @@ video {
     outline: none;
 }
 
+.jeszcze-wiecej-wspolprac-section {
+    padding: 50px 0;
+    text-align: left;
+}
+
+.jeszcze-wiecej-wspolprac-section h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10%;
+}
+
+.jeszcze-wiecej-wspolprac-section img {
+    width: 90%;
+    margin-left: 5%;
+}
 
 
 
@@ -162,7 +179,7 @@ video {
     }
 
     .arrow-image {
-        width: 250px;
+        width: 350px;
     }
 
     .wspolprace-section h2, .experience-section h2 {
@@ -193,7 +210,7 @@ video {
     }
 
     .arrow-image {
-        width: 200px;
+        width: 350px;
     }
 
     .wspolprace-section h2, .experience-section h2 {
