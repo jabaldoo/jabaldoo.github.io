@@ -1,0 +1,138 @@
+body {
+    background: radial-gradient(circle at center, rgb(63, 100, 145), rgb(26, 26, 35));
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* styling filmiku */
+video {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+/* Logo overlay container */
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    pointer-events: none; 
+}
+
+/* Logo styling */
+.logo {
+    margin-top: 40px;
+    max-width: 800px;
+    width: 80vw; 
+    
+}
+
+.about-me-section {
+    padding: 50px 0;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-wrapper img {
+    width: 300px;
+    height: auto;
+    outline: 55px solid rgb(255, 208, 0);
+}
+
+.text-content {
+    color: white;
+}
+
+.name-container {
+    transform: rotate(-5deg);
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nickname {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arrow-image {
+    width: 300px; /* Increased size */
+    height: auto;
+    margin-top: 10px; 
+}
+
+.wspolprace-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.wspolprace-section h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.custom-font-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.gallery img {
+    width: 300px; 
+    height: auto;
+    outline: 6px solid rgb(255, 208, 0);
+}
+
+.experience-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.experience-section h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.yellow-text {
+    color: rgb(255, 208, 0);
+}
+
+.experience-section .gallery img {
+    outline: none;
+}
+
+
+
