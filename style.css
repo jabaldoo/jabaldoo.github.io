@@ -24,7 +24,6 @@ video {
     filter: brightness(60%);
 }
 
-/* Logo overlay container */
 .logo-overlay {
     position: absolute;
     top: 0;
@@ -37,7 +36,6 @@ video {
     pointer-events: none; 
 }
 
-/* Logo styling */
 .logo {
     margin-top: 40px;
     max-width: 800px;
