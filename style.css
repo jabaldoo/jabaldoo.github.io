@@ -206,12 +206,12 @@ video {
     }
 
     .image-wrapper img {
-        width: 200px;
+        width: 180px;
         outline-width: 30px;
     }
 
     .arrow-image {
-        width: 350px;
+        width: 180px;
     }
 
     .wspolprace-section h2, .experience-section h2 {
