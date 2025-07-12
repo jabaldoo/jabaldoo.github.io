@@ -135,20 +135,20 @@ video {
 }
 
 .jeszcze-wiecej-wspolprac-section {
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: left;
 }
 
 .jeszcze-wiecej-wspolprac-section h2 {
     font-size: 3em;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     padding-left: 10%;
 }
 
 .jeszcze-wiecej-wspolprac-section img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -252,7 +252,7 @@ video {
 }
 
 .left-images img {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
@@ -272,7 +272,7 @@ video {
 .contact-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -280,28 +280,41 @@ video {
 .contact-left img {
     width: 600px;
     height: auto;
+    outline: 10px solid rgb(255, 208, 0);
 }
 
 .contact-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.contact-logo {
+    width: 150px;
 }
 
 .contact-right p {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .kontakt-text {
-    font-size: 3em !important;
+    font-size: 2.5em !important;
+    color: rgb(255, 208, 0);
 }
 
 .cta-container {
     position: relative;
-    display: inline-block;
+    width: 250px;
+}
+
+.cta-container img {
+    width: 100%;
+    height: auto;
 }
 
 .cta-text {
@@ -310,12 +323,13 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 
 .cta-text .yellow-text {
     color: rgb(255, 208, 0);
     font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .underline {
