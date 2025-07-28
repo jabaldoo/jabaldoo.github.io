@@ -562,3 +562,140 @@ video {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Media query for tablets (e.g., iPads) */
+@media (max-width: 1024px) {
+    .top-nav ul {
+        gap: 20px;
+    }
+
+    .top-nav a {
+        font-size: 1em;
+    }
+
+    .logo {
+        max-width: 500px;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+    }
+
+    .image-wrapper img {
+        width: 200px;
+        outline-width: 30px;
+    }
+
+    .arrow-image {
+        width: 250px;
+    }
+
+    .wspolprace-section h2, .experience-section h2 {
+        font-size: 2em;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .gallery img {
+        width: 200px;
+    }
+
+    .left-images img, .right-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-left img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-right {
+        padding-top: 20px;
+    }
+
+    .cta-container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cta-text .yellow-text {
+        font-size: 2em;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Media query for smaller phones */
+@media (max-width: 320px) {
+    .top-nav ul {
+        gap: 10px;
+    }
+
+    .top-nav a {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .about-me-container {
+        gap: 10px;
+    }
+
+    .image-wrapper img {
+        width: 150px;
+        outline-width: 20px;
+    }
+
+    .arrow-image {
+        width: 150px;
+    }
+
+    .wspolprace-section h2, .experience-section h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery {
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 150px;
+    }
+
+    .left-images img, .right-image img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .contact-left img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .contact-right {
+        padding-top: 10px;
+    }
+
+    .cta-container {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .cta-text .yellow-text {
+        font-size: 1.5em;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        max-width: 200px;
+    }
+}
