@@ -699,3 +699,39 @@ video {
         max-width: 200px;
     }
 }
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(26, 26, 35, 0.9);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .new-section-container {
+        flex-direction: column-reverse;
+    }
+}
