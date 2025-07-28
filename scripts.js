@@ -28,3 +28,36 @@ window.addEventListener('click', (e) => {
         setTimeout(() => contactModal.style.display = 'none', 300);
     }
 });
+
+if (window.innerWidth <= 768) {
+    const navLinks = document.querySelectorAll('.top-nav a');
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+        if (section.id !== 'about-me') {
+            section.style.display = 'none';
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+
+            if (targetId === 'kontakt') {
+                contactModal.style.display = 'block';
+                setTimeout(() => contactModal.classList.add('open'), 10);
+            } else {
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.style.display = 'block';
+                        section.classList.add('active-section');
+                    } else {
+                        section.style.display = 'none';
+                        section.classList.remove('active-section');
+                    }
+                });
+            }
+        });
+    });
+}
