@@ -53,13 +53,15 @@ if (window.innerWidth <= 768) {
                 contactModal.style.display = 'block';
                 setTimeout(() => contactModal.classList.add('open'), 10);
             } else {
-                // Hide all sections
+                // Hide all sections with animation
                 sections.forEach(section => {
-                    section.style.display = 'none';
                     section.style.opacity = '0';
+                    setTimeout(() => {
+                        section.style.display = 'none';
+                    }, 500); // Match CSS transition duration
                 });
 
-                // Show the target section
+                // Show the target section with animation
                 const targetSection = document.getElementById(targetId);
                 if (targetSection) {
                     targetSection.style.display = 'block';
