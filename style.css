@@ -50,6 +50,65 @@ font-family: "Poppins", sans-serif;
     color: rgb(26, 26, 35);
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 26, 35, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 10000;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
 .video-container {
     position: relative;
     width: 100%;
@@ -472,7 +531,7 @@ video {
     .prace-right-videos {
         flex-direction: column;
     }
-    .video-placeholder {
+    .video-wrapper {
         width: 100%;
         max-width: 320px;
     }
@@ -697,41 +756,5 @@ video {
     .video-wrapper {
         width: 100%;
         max-width: 200px;
-    }
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(26, 26, 35, 0.9);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .new-section-container {
-        flex-direction: column-reverse;
     }
 }

@@ -30,8 +30,13 @@ window.addEventListener('click', (e) => {
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+const sidenav = document.getElementById('mySidenav');
+const closeNavBtn = document.querySelector('.closebtn');
 
 menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    sidenav.style.width = "250px";
+});
+
+closeNavBtn.addEventListener('click', () => {
+    sidenav.style.width = "0";
 });
