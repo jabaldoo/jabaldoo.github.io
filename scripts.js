@@ -32,13 +32,17 @@ window.addEventListener('click', (e) => {
 if (window.innerWidth <= 768) {
     const navLinks = document.querySelectorAll('.top-nav a');
     const sections = document.querySelectorAll('section');
-    const videoContainer = document.querySelector('.video-container');
 
-    // Hide all sections except the first one (video-container) initially
+    // Hide all sections except the first one (home) initially
     sections.forEach(section => {
-        section.style.display = 'none';
+        if (section.id !== 'home') {
+            section.style.display = 'none';
+            section.style.opacity = '0';
+        } else {
+            section.style.display = 'block';
+            section.style.opacity = '1';
+        }
     });
-    videoContainer.style.display = 'block';
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -49,20 +53,23 @@ if (window.innerWidth <= 768) {
                 contactModal.style.display = 'block';
                 setTimeout(() => contactModal.classList.add('open'), 10);
             } else {
-                // Hide all sections and video container
+                // Hide all sections
                 sections.forEach(section => {
                     section.style.display = 'none';
+                    section.style.opacity = '0';
                 });
-                videoContainer.style.display = 'none';
 
-                // Show the target section or video container
-                if (targetId === 'home') {
-                    videoContainer.style.display = 'block';
-                } else {
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.style.display = 'block';
-                    }
+                // Show the target section
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                    // Trigger reflow to ensure transition works
+                    targetSection.offsetWidth; 
+                    targetSection.style.opacity = '1';
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
                 }
             }
         });
