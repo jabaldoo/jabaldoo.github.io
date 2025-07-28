@@ -32,12 +32,13 @@ window.addEventListener('click', (e) => {
 if (window.innerWidth <= 768) {
     const navLinks = document.querySelectorAll('.top-nav a');
     const sections = document.querySelectorAll('section');
+    const videoContainer = document.querySelector('.video-container');
 
+    // Hide all sections except the first one (video-container) initially
     sections.forEach(section => {
-        if (section.id !== 'about-me') {
-            section.style.display = 'none';
-        }
+        section.style.display = 'none';
     });
+    videoContainer.style.display = 'block';
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -48,15 +49,21 @@ if (window.innerWidth <= 768) {
                 contactModal.style.display = 'block';
                 setTimeout(() => contactModal.classList.add('open'), 10);
             } else {
+                // Hide all sections and video container
                 sections.forEach(section => {
-                    if (section.id === targetId) {
-                        section.style.display = 'block';
-                        section.classList.add('active-section');
-                    } else {
-                        section.style.display = 'none';
-                        section.classList.remove('active-section');
-                    }
+                    section.style.display = 'none';
                 });
+                videoContainer.style.display = 'none';
+
+                // Show the target section or video container
+                if (targetId === 'home') {
+                    videoContainer.style.display = 'block';
+                } else {
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.style.display = 'block';
+                    }
+                }
             }
         });
     });
