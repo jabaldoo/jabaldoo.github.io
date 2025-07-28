@@ -28,15 +28,3 @@ window.addEventListener('click', (e) => {
         setTimeout(() => contactModal.style.display = 'none', 300);
     }
 });
-
-const menuToggle = document.querySelector('.menu-toggle');
-const sidenav = document.getElementById('mySidenav');
-const closeNavBtn = document.querySelector('.closebtn');
-
-menuToggle.addEventListener('click', () => {
-    sidenav.style.width = "250px";
-});
-
-closeNavBtn.addEventListener('click', () => {
-    sidenav.style.width = "0";
-});
