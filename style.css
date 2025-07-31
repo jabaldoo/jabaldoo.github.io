@@ -191,6 +191,10 @@ video {
     margin: 0 auto;
 }
 
+.wspolprace-img {
+    width: 80% !important;
+}
+
 .new-section-container img, .contact-left img {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -427,7 +431,7 @@ video {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    width: 320px;
+    width: 400px;
     outline: 6px solid rgb(255, 208, 0);
 }
 
@@ -699,12 +703,12 @@ video {
 }
 
 .filmy-section {
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .filmy-title {
-    font-size: 3em;
+    font-size: 4em;
     color: white;
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -713,7 +717,7 @@ video {
 .filmy-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
@@ -722,7 +726,7 @@ video {
 }
 
 .film-title {
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgb(255, 208, 0);
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
@@ -747,7 +751,7 @@ video {
     padding-bottom: 177.77%; /* 9:16 aspect ratio */
     height: 0;
     overflow: hidden;
-    width: 180px;
+    width: 225px;
     outline: 6px solid rgb(255, 208, 0);
 }
 
