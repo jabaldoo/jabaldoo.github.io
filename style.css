@@ -698,6 +698,67 @@ video {
     }
 }
 
+.filmy-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.filmy-title {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filmy-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.film {
+    text-align: center;
+}
+
+.film-title {
+    font-size: 1.5em;
+    color: rgb(255, 208, 0);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.video-placeholder {
+    width: 320px;
+    height: 180px;
+    background-color: #333;
+    border: 2px solid rgb(255, 208, 0);
+}
+
+.video-placeholder-vertical {
+    width: 180px;
+    height: 320px;
+    background-color: #333;
+    border: 2px solid rgb(255, 208, 0);
+}
+
+.video-wrapper-vertical {
+    position: relative;
+    padding-bottom: 177.77%; /* 9:16 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    width: 180px;
+    outline: 6px solid rgb(255, 208, 0);
+}
+
+.video-wrapper-vertical iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 768px) {
     body {
         overflow: hidden;
