@@ -763,6 +763,58 @@ video {
     height: 100%;
 }
 
+.wspomnienia-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.wspomnienia-title {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.light-blue-text {
+    color: #3498db;
+}
+
+.wspomnienia-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wspomnienia-left, .wspomnienia-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wspomnienia-middle {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+.video-caption {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.wspomnienia-video-vertical {
+    width: 225px;
+    height: 400px;
+    outline: 6px solid rgb(255, 208, 0);
+}
+
 @media (max-width: 768px) {
     body {
         overflow: hidden;
