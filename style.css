@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at center, rgb(63, 100, 145), rgb(26, 26, 35));
+    background: radial-gradient(ellipse at center, rgba(63, 100, 145, 1) 0%, rgba(26, 26, 35, 1) 70%, rgba(10, 10, 10, 1) 100%);
+    font-family: "loos-extended", sans-serif;
 }
 
 *{
@@ -38,7 +39,7 @@ font-family: "Poppins", sans-serif;
 .top-nav a {
     color: white;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     font-size: 1.2em;
     padding: 10px 15px;
     border-radius: 8px;
@@ -53,7 +54,7 @@ font-family: "Poppins", sans-serif;
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 90vh;
 }
 
 /* styling filmiku */
@@ -96,7 +97,7 @@ video {
 .image-wrapper img {
     width: 300px;
     height: auto;
-    outline: 55px solid rgb(255, 208, 0);
+    outline: 20px solid rgb(255, 208, 0);
 }
 
 .text-content {
@@ -110,12 +111,12 @@ video {
 
 .name {
     font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .nickname {
     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .arrow-image {
@@ -136,7 +137,7 @@ video {
 }
 
 .custom-font-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .gallery {
@@ -161,7 +162,7 @@ video {
     font-size: 3em;
     color: white;
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .yellow-text {
@@ -181,7 +182,7 @@ video {
     font-size: 3em;
     color: white;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     padding-left: 10%;
 }
 
@@ -339,7 +340,7 @@ video {
 
 .contact-right p {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     font-size: 1.5em;
     margin: 0;
 }
@@ -370,7 +371,7 @@ video {
 
 .cta-text .yellow-text {
     color: rgb(255, 208, 0);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     font-size: 2.5em;
 }
 
@@ -407,18 +408,20 @@ video {
 
 .prace-text {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .prace-text h2 {
     font-size: 3em;
     color: white;
     margin-bottom: 10px;
+    font-family: "loos-extended", sans-serif;
 }
 
 .prace-text h3 {
     font-size: 1.5em;
     color: #20c997; /* Teal color */
+    font-family: "loos-extended", sans-serif;
 }
 
 .prace-right-videos {
@@ -711,7 +714,7 @@ video {
     font-size: 4em;
     color: white;
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .filmy-container {
@@ -728,7 +731,7 @@ video {
 .film-title {
     font-size: 2em;
     color: rgb(255, 208, 0);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -772,7 +775,7 @@ video {
     font-size: 3em;
     color: white;
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
 }
 
 .light-blue-text {
@@ -785,7 +788,7 @@ video {
 
 .wspomnienia-middle {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     font-size: 1.5em;
     margin-bottom: 20px; /* Add space below the text */
 }
@@ -806,7 +809,7 @@ video {
 
 .video-caption {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "loos-extended", sans-serif;
     font-size: 1.2em;
     margin-top: 10px;
 }
