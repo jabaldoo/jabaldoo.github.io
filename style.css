@@ -4,14 +4,14 @@ html {
 
 body {
     background: radial-gradient(ellipse at center, rgba(63, 100, 145, 1) 0%, rgba(26, 26, 35, 1) 70%, rgba(10, 10, 10, 1) 100%);
-    font-family: "loos-extended", sans-serif;
+    font-family: "loos-extended";
 }
 
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "Poppins", sans-serif;
+font-family: "Poppins",;
 
 }
 
@@ -167,6 +167,7 @@ video {
 
 .yellow-text {
     color: rgb(255, 208, 0);
+    font-family: loo;
 }
 
 .experience-section .gallery img {
@@ -348,6 +349,7 @@ video {
 .kontakt-text {
     font-size: 2.5em !important;
     color: rgb(255, 208, 0);
+    font-family: "loos-extended";
 }
 
 .cta-container {
