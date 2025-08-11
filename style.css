@@ -428,7 +428,7 @@ video {
 
 .prace-right-videos {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .video-wrapper {
@@ -438,6 +438,7 @@ video {
     overflow: hidden;
     width: 400px;
     outline: 6px solid rgb(255, 208, 0);
+    margin-bottom: 20px;
 }
 
 .video-wrapper iframe {
@@ -799,7 +800,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    gap: 20px; /* Space between the two videos */
+    gap: 47px; /* Space between the two videos */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
