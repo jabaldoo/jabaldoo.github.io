@@ -33,6 +33,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const popupMenu = document.querySelector('.popup-menu');
 
 hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('open');
     if (popupMenu.style.display === 'flex') {
         popupMenu.style.display = 'none';
     } else {
@@ -45,5 +46,17 @@ const popupLinks = document.querySelectorAll('.popup-menu a');
 popupLinks.forEach(link => {
     link.addEventListener('click', () => {
         popupMenu.style.display = 'none';
+    });
+});
+
+const videoWrappers = document.querySelectorAll('.moje-prace-section .video-wrapper');
+
+videoWrappers.forEach(wrapper => {
+    wrapper.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            wrapper.classList.add('video-active');
+            const iframe = wrapper.querySelector('iframe');
+            iframe.src += '&autoplay=1';
+        }
     });
 });
