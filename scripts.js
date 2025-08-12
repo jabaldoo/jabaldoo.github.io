@@ -29,51 +29,21 @@ window.addEventListener('click', (e) => {
     }
 });
 
-if (window.innerWidth <= 768) {
-    const navLinks = document.querySelectorAll('.top-nav a');
-    const sections = document.querySelectorAll('section');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const popupMenu = document.querySelector('.popup-menu');
 
-    // Hide all sections except the first one (home) initially
-    sections.forEach(section => {
-        if (section.id !== 'home') {
-            section.style.display = 'none';
-            section.style.opacity = '0';
-        } else {
-            section.style.display = 'block';
-            section.style.opacity = '1';
-        }
+hamburgerMenu.addEventListener('click', () => {
+    if (popupMenu.style.display === 'flex') {
+        popupMenu.style.display = 'none';
+    } else {
+        popupMenu.style.display = 'flex';
+    }
+});
+
+const popupLinks = document.querySelectorAll('.popup-menu a');
+
+popupLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        popupMenu.style.display = 'none';
     });
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href').substring(1);
-
-            if (targetId === 'kontakt') {
-                contactModal.style.display = 'block';
-                setTimeout(() => contactModal.classList.add('open'), 10);
-            } else {
-                // Hide all sections with animation
-                sections.forEach(section => {
-                    section.style.opacity = '0';
-                    setTimeout(() => {
-                        section.style.display = 'none';
-                    }, 500); // Match CSS transition duration
-                });
-
-                // Show the target section with animation
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.style.display = 'block';
-                    // Trigger reflow to ensure transition works
-                    targetSection.offsetWidth; 
-                    targetSection.style.opacity = '1';
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    });
-}
+});
