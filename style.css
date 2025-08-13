@@ -1,12 +1,15 @@
+/* Smooth scrolling for the entire HTML document */
 html {
     scroll-behavior: smooth;
 }
 
+/* Body styling: background gradient and font family */
 body {
     background: radial-gradient(ellipse at center, rgba(63, 100, 145, 1) 0%, rgba(26, 26, 35, 1) 70%, rgba(10, 10, 10, 1) 100%);
     font-family: "loos-extended", sans-serif;
 }
 
+/* Universal box-sizing and font-family for all elements */
 *{
 margin: 0;
 padding: 0;
@@ -15,6 +18,7 @@ font-family: "loos-extended", sans-serif;
 
 }
 
+/* Styling for the fixed top navigation bar */
 .top-nav {
     position: fixed;
     top: 0;
@@ -29,6 +33,7 @@ font-family: "loos-extended", sans-serif;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* Styling for the navigation links list */
 .top-nav ul {
     list-style: none;
     margin: 0;
@@ -37,6 +42,7 @@ font-family: "loos-extended", sans-serif;
     gap: 30px;
 }
 
+/* Styling for individual navigation links */
 .top-nav a {
     color: white;
     text-decoration: none;
@@ -47,6 +53,7 @@ font-family: "loos-extended", sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover effect for navigation links */
 .top-nav a:hover {
     background-color: rgb(255, 208, 0);
     color: rgb(26, 26, 35);
@@ -989,5 +996,11 @@ video {
 @media (min-width: 769px) {
     .play-button {
         display: none;
+    }
+}
+@media (max-width: 768px) {
+    .video-container {
+        width: 100vw;
+        height: 100vh;
     }
 }
