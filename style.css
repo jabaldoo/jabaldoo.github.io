@@ -598,7 +598,7 @@ video {
     }
 
     .about-me-container {
-        flex-direction: column;
+        
     }
 
     .image-wrapper img {
@@ -1002,5 +1002,13 @@ video {
     .video-container {
         width: 100vw;
         height: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
