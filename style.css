@@ -260,11 +260,12 @@ video {
 
     .about-me-container {
         gap: 20px;
+        padding: 20px;
     }
 
     .image-wrapper img {
         width: 180px;
-        outline-width: 30px;
+        outline-width: 10px;
     }
 
     .arrow-image {
@@ -510,10 +511,10 @@ video {
         flex-direction: column;
     }
     .left-images {
-        order: 1;
+        order: 2;
     }
     .right-image {
-        order: 2;
+        order: 1;
     }
 }
 
@@ -872,11 +873,18 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 26, 35, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 10000;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.popup-menu.open {
+    display: flex;
+    opacity: 1;
 }
 
 .popup-menu ul {
@@ -893,6 +901,14 @@ video {
     color: white;
     text-decoration: none;
     font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.popup-menu a:hover {
+    background-color: rgb(255, 208, 0);
+    color: rgb(26, 26, 35);
 }
 
 @media (max-width: 768px) {
@@ -980,10 +996,6 @@ video {
 }
 
 @media (max-width: 768px) {
-    .video-wrapper iframe {
-        display: none;
-    }
-
     .video-wrapper.video-active iframe {
         display: block;
     }
@@ -1007,8 +1019,45 @@ video {
 
 @media (max-width: 480px) {
     .about-me-container {
-        flex-direction: row;
-        justify-content: center;
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    .image-wrapper, .text-content {
+        flex: 1;
+        padding: 10px;
+    }
+    .image-wrapper img, .arrow-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    body,
+    .about-me-section,
+    .new-section,
+    .wspolprace-section,
+    .experience-section,
+    .filmy-section,
+    .wspomnienia-section,
+    .moje-prace-section,
+    .jeszcze-wiecej-wspolprac-section {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: center;
+    }
+
+    .hamburger-menu {
+        display: block;
+        transform: scale(1.5);
     }
 }

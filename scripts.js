@@ -34,18 +34,15 @@ const popupMenu = document.querySelector('.popup-menu');
 
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('open');
-    if (popupMenu.style.display === 'flex') {
-        popupMenu.style.display = 'none';
-    } else {
-        popupMenu.style.display = 'flex';
-    }
+    popupMenu.classList.toggle('open');
 });
 
 const popupLinks = document.querySelectorAll('.popup-menu a');
 
 popupLinks.forEach(link => {
     link.addEventListener('click', () => {
-        popupMenu.style.display = 'none';
+        hamburgerMenu.classList.remove('open');
+        popupMenu.classList.remove('open');
     });
 });
 
