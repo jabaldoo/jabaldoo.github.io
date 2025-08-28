@@ -205,12 +205,10 @@ video {
     width: 80% !important;
 }
 
-.new-section-container img, .contact-left img {
+.new-section-container img {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-
 
 
 .gradient-box {
@@ -318,78 +316,6 @@ video {
     height: auto;
 }
 
-.contact-section {
-    padding: 50px 0;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.contact-left img {
-    width: 600px;
-    height: auto;
-    outline: 10px solid rgb(255, 208, 0);
-}
-
-.contact-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 50px;
-}
-
-.contact-logo {
-    width: 225px;
-}
-
-.contact-right p {
-    color: white;
-    font-family: "loos-extended", sans-serif;
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.kontakt-text {
-    font-size: 2.5em !important;
-    color: rgb(255, 208, 0);
-    font-family: "loos-extended", sans-serif;
-}
-
-.cta-container {
-    position: relative;
-    width: 400px;
-}
-
-.cta-container img {
-    width: 100%;
-    height: auto;
-}
-
-.cta-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-}
-
-.cta-text .yellow-text {
-    color: rgb(255, 208, 0);
-    font-family: "loos-extended", sans-serif;
-    font-size: 2.5em;
-}
-
-.underline {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 208, 0);
-}
 
 /* Moje Prace Section */
 .moje-prace-section {
@@ -499,12 +425,6 @@ video {
     }
 }
 
-@media (max-width: 768px) {
-    .contact-right {
-        padding-top: 20px;
-    }
-}
-
 
 @media (max-width: 768px) {
     .new-section-container {
@@ -566,10 +486,6 @@ video {
     transform: scale(1);
 }
 
-.modal .contact-logo {
-    width: 300px; /* Increased logo size */
-}
-
 .close-button {
     color: #aaa;
     float: right;
@@ -628,24 +544,6 @@ video {
         max-width: 300px;
     }
 
-    .contact-left img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .contact-right {
-        padding-top: 20px;
-    }
-
-    .cta-container {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .cta-text .yellow-text {
-        font-size: 2em;
-    }
-
     .video-wrapper {
         width: 100%;
         max-width: 280px;
@@ -695,24 +593,6 @@ video {
     .left-images img, .right-image img {
         width: 100%;
         max-width: 200px;
-    }
-
-    .contact-left img {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .contact-right {
-        padding-top: 10px;
-    }
-
-    .cta-container {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .cta-text .yellow-text {
-        font-size: 1.5em;
     }
 
     .video-wrapper {
@@ -946,16 +826,6 @@ video {
         max-width: 80vw;
     }
 
-    .contact-left img {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .cta-container {
-        width: 100%;
-        max-width: 320px;
-    }
-
     .wspomnienia-video-vertical {
         width: 100%;
         max-width: 225px;
@@ -963,9 +833,14 @@ video {
 
     .filmy-title,
     .prace-text h2,
-    .wspomnienia-title,
     .jeszcze-wiecej-wspolprac-section h2 {
         font-size: 2.5em;
+    }
+
+    .wspomnienia-title {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 0 15px;
     }
 }
 
@@ -1060,4 +935,35 @@ video {
         display: block;
         transform: scale(1.5);
     }
+}
+
+/* Konsultacja Popup */
+#konsultacja-popup .modal-content {
+    background-color: #000;
+    border: 2px solid #ffd700;
+    margin: 15vh 15%;
+    width: 70%;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.konsultacja-image {
+    width: 100%;
+    height: auto;
+}
+
+#konsultacja-btn {
+    background-color: #ffd700;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "loos-extended", sans-serif;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#konsultacja-btn:hover {
+    background-color: rgb(26, 26, 35);
+    color: rgb(255, 208, 0);
 }

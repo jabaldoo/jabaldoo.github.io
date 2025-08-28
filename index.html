@@ -28,7 +28,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#moje-prace">Moje Prace</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#" id="konsultacja-btn">KONSULTACJA</a></li>
             </ul>
         </div>
     </nav>
@@ -198,33 +198,17 @@
         <h2>JESZCZE WIECEJ<br><span class="yellow-text">WSPÓŁPRAC</span></h2>
         <img src="src/wspolprace/wspolprace.png" alt="Placeholder Image" class="wspolprace-img">
     </section>
-    <!-- Contact Modal -->
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="contact-container">
-                <!-- Left side of the contact modal with an image -->
-                <div class="contact-left">
-                    <img src="src/elementy-gotowe/last-sect.jpg" alt="Sebastian Dulik">
-                </div>
-                <!-- Right side of the contact modal with contact information -->
-                <div class="contact-right">
-                    <img src="src/loga/logo 5edit bez tla.png" alt="Logo" class="contact-logo">
-                    <p class="kontakt-text yellow-text">KONTAKT</p>
-                    <p>5edit@gmail.com</p>
-                    <div class="cta-container">
-                        <img src="src/elementy/cta bez tla.png" alt="CTA">
-                        <div class="cta-text">
-                            <span class="yellow-text underline">Napisz!</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- AOS (Animate On Scroll) library script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Main JavaScript file for custom scripts -->
     <script src="scripts.js"></script>
+
+    <!-- Konsultacja Popup -->
+    <div id="konsultacja-popup" class="modal open">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="konsultacja.png" alt="Konsultacja" class="konsultacja-image">
+        </div>
+    </div>
 </body>
 </html>

@@ -7,27 +7,7 @@ document.addEventListener("mousemove", function(e) {
     logo.style.transform = `translateX(${x}px) translateY(${y}px)`;
 });
 
-const contactModal = document.getElementById('contact-modal');
-const contactLink = document.querySelector('a[href="#kontakt"]');
-const closeButton = document.querySelector('.close-button');
 
-contactLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    contactModal.style.display = 'block';
-    setTimeout(() => contactModal.classList.add('open'), 10);
-});
-
-closeButton.addEventListener('click', () => {
-    contactModal.classList.remove('open');
-    setTimeout(() => contactModal.style.display = 'none', 300);
-});
-
-window.addEventListener('click', (e) => {
-    if (e.target == contactModal) {
-        contactModal.classList.remove('open');
-        setTimeout(() => contactModal.style.display = 'none', 300);
-    }
-});
 
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const popupMenu = document.querySelector('.popup-menu');
@@ -56,4 +36,23 @@ videoWrappers.forEach(wrapper => {
             iframe.src += '&autoplay=1';
         }
     });
+});
+
+const konsultacjaModal = document.getElementById('konsultacja-popup');
+const konsultacjaBtn = document.getElementById('konsultacja-btn');
+const konsultacjaCloseButton = konsultacjaModal.querySelector('.close-button');
+
+konsultacjaBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    konsultacjaModal.style.display = 'block';
+});
+
+konsultacjaCloseButton.addEventListener('click', () => {
+    konsultacjaModal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target == konsultacjaModal) {
+        konsultacjaModal.style.display = 'none';
+    }
 });
