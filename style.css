@@ -468,6 +468,7 @@ video {
 
 .modal.open {
     opacity: 1;
+    display: block;
 }
 
 .modal-content {
@@ -940,7 +941,10 @@ video {
 /* Konsultacja Popup */
 #konsultacja-popup .modal-content {
     background-color: #000;
-    border: 2px solid #ffd700;
+
+
+    border: 2px solid rgb(255, 208, 0);
+    border-radius: 15px;
     margin: 15vh 15%;
     width: 70%;
     overflow-y: auto;

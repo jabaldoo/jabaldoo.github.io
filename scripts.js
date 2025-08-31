@@ -45,14 +45,17 @@ const konsultacjaCloseButton = konsultacjaModal.querySelector('.close-button');
 konsultacjaBtn.addEventListener('click', (e) => {
     e.preventDefault();
     konsultacjaModal.style.display = 'block';
+    setTimeout(() => konsultacjaModal.classList.add('open'), 10);
 });
 
 konsultacjaCloseButton.addEventListener('click', () => {
-    konsultacjaModal.style.display = 'none';
+    konsultacjaModal.classList.remove('open');
+    setTimeout(() => konsultacjaModal.style.display = 'none', 300);
 });
 
 window.addEventListener('click', (e) => {
     if (e.target == konsultacjaModal) {
-        konsultacjaModal.style.display = 'none';
+        konsultacjaModal.classList.remove('open');
+        setTimeout(() => konsultacjaModal.style.display = 'none', 300);
     }
 });
