@@ -18,7 +18,6 @@ font-family: "loos-extended", sans-serif;
 
 }
 
-/* Styling for the fixed top navigation bar */
 .top-nav {
     position: fixed;
     top: 0;
@@ -903,12 +902,7 @@ video {
         display: none;
     }
 }
-@media (max-width: 768px) {
-    .video-container {
-        width: 100vw;
-        height: 100vh;
-    }
-}
+
 
 @media (max-width: 480px) {
     .about-me-container {
@@ -996,7 +990,7 @@ video {
 }
 
 .na-spotkaniu-arrow {
-    width: 100px;
+    width: 80%;
     height: auto;
 }
 
