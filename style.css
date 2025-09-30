@@ -737,14 +737,17 @@ video {
 
 /* Hamburger Menu */
 .hamburger-menu {
-    display: none;
+    background: transparent;
+    border: none;
     cursor: pointer;
     padding: 10px;
+    display: none; /* Hidden by default */
 }
 
-.bar {
+.hamburger-menu .bar {
+    display: block;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: white;
     margin: 5px 0;
     transition: all 0.3s ease-in-out;

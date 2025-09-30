@@ -41,7 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const konsultacjaBtn = document.getElementById('konsultacja-btn');
     const konsultacjaCloseButton = konsultacjaModal.querySelector('.close-button');
 
+    const konsultacjaBtnMobile = document.getElementById('konsultacja-btn-mobile');
+
     konsultacjaBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        konsultacjaModal.style.display = 'block';
+        setTimeout(() => konsultacjaModal.classList.add('open'), 10);
+    });
+
+    konsultacjaBtnMobile.addEventListener('click', (e) => {
         e.preventDefault();
         konsultacjaModal.style.display = 'block';
         setTimeout(() => konsultacjaModal.classList.add('open'), 10);
