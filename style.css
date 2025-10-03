@@ -1,15 +1,12 @@
-/* Smooth scrolling for the entire HTML document */
 html {
     scroll-behavior: smooth;
 }
 
-/* Body styling: background gradient and font family */
 body {
     background: radial-gradient(ellipse at center, rgba(63, 100, 145, 1) 0%, rgba(26, 26, 35, 1) 70%, rgba(10, 10, 10, 1) 100%);
     font-family: "loos-extended", sans-serif;
 }
 
-/* Universal box-sizing and font-family for all elements */
 *{
 margin: 0;
 padding: 0;
@@ -32,7 +29,6 @@ font-family: "loos-extended", sans-serif;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Styling for the navigation links list */
 .top-nav ul {
     list-style: none;
     margin: 0;
@@ -41,7 +37,6 @@ font-family: "loos-extended", sans-serif;
     gap: 30px;
 }
 
-/* Styling for individual navigation links */
 .top-nav a {
     color: white;
     text-decoration: none;
@@ -52,7 +47,6 @@ font-family: "loos-extended", sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover effect for navigation links */
 .top-nav a:hover {
     background-color: rgb(255, 208, 0);
     color: rgb(26, 26, 35);
@@ -64,7 +58,6 @@ font-family: "loos-extended", sans-serif;
     height: 90vh;
 }
 
-/* styling filmiku */
 video {
     width: 100%;
     height: 100%;
@@ -127,7 +120,7 @@ video {
 }
 
 .arrow-image {
-    width: 300px; /* Increased size */
+    width: 300px; 
     height: auto;
     margin-top: 10px; 
 }
@@ -215,7 +208,7 @@ video {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Adjust height as needed */
+    height: 100px; 
     background: linear-gradient(to top, rgba(26, 26, 35, 1), rgba(26, 26, 35, 0));
 }
 
@@ -316,7 +309,6 @@ video {
 }
 
 
-/* Moje Prace Section */
 .moje-prace-section {
     padding: 50px 0;
 }
@@ -356,7 +348,7 @@ video {
 
 .prace-text h3 {
     font-size: 1.5em;
-    color: #20c997; /* Teal color */
+    color: #20c997; 
     font-family: "loos-extended", sans-serif;
 }
 
@@ -367,7 +359,7 @@ video {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     width: 400px;
@@ -383,7 +375,6 @@ video {
     height: 100%;
 }
 
-/* Responsive for Moje Prace Section */
 @media (max-width: 1200px) {
     .video-placeholder {
         width: 280px;
@@ -517,7 +508,6 @@ video {
     cursor: pointer;
 }
 
-/* Media query for tablets (e.g., iPads) */
 @media (max-width: 1024px) {
     .top-nav ul {
         gap: 20px;
@@ -567,7 +557,6 @@ video {
     }
 }
 
-/* Media query for smaller phones */
 @media (max-width: 320px) {
     .top-nav ul {
         gap: 10px;
@@ -664,7 +653,7 @@ video {
 
 .video-wrapper-vertical {
     position: relative;
-    padding-bottom: 177.77%; /* 9:16 aspect ratio */
+    padding-bottom: 177.77%; 
     height: 0;
     overflow: hidden;
     width: 225px;
@@ -696,22 +685,22 @@ video {
 }
 
 .wspomnienia-container {
-    text-align: center; /* Center align the contents */
+    text-align: center; 
 }
 
 .wspomnienia-middle {
     color: white;
     font-family: "loos-extended", sans-serif;
     font-size: 1.5em;
-    margin-bottom: 20px; /* Add space below the text */
+    margin-bottom: 20px; 
 }
 
 .wspomnienia-videos {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    gap: 47px; /* Space between the two videos */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start; 
+    gap: 47px; 
+    flex-wrap: wrap; 
 }
 
 .wspomnienia-left, .wspomnienia-right {
@@ -735,13 +724,12 @@ video {
 
 
 
-/* Hamburger Menu */
 .hamburger-menu {
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 10px;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 .hamburger-menu .bar {
@@ -765,7 +753,6 @@ video {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Pop-up Menu */
 .popup-menu {
     display: none;
     position: fixed;
@@ -952,7 +939,6 @@ video {
     }
 }
 
-/* Konsultacja Popup */
 #konsultacja-popup .modal-content {
     background-color: #000;
     border: 2px solid rgb(255, 208, 0);
