@@ -976,11 +976,13 @@ video {
     font-family: "loos-extended", sans-serif;
     font-size: 1.8em;
     margin-right: 10px;
+    display: inline-block;
 }
 
 .na-spotkaniu-arrow {
-    width: 80%;
+    width: 30%;
     height: auto;
+    vertical-align: middle;
 }
 
 .konsultacja-list {
